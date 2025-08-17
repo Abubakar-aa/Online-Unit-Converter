@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="description" content="Free online unit converter for length, weight, temperature and more.">
+    <meta name="keywords" content="unit converter, length, weight, temperature, online converter">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="convert.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="img/1.png">
+    <title>Online Unit Converter</title>
+</head>
+<body>
+    <div class="converter">
+        <h3>Unit Converter</h3>
+        <input type="number" id="inputValue" placeholder="Enter Value">
+        <div class="row">
+            <label for="type"> Type </label>
+            <select id="type" onchange="updateUnits()">
+                <option value="length"> Length </option>
+                <option value="weight"> Weight </option>
+                <option value="temperature"> Temperature </option>
+            </select>
+        </div>
+        <div class="row">
+            <label>Convert</label>
+            <select id="from"></select>
+            <span style="font-size: 14px; color: #555;"> to </span>
+            <select id="to"></select>
+        </div>
+        <button onclick="convert()"> Convert </button>
+        <div class="result" id="result"></div>
+    </div>
+
+</body>
+</html>

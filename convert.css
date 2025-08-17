@@ -1,0 +1,70 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(227, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.converter {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,08);
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.converter h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+.row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.row label {
+    font-size: 14px;
+    color: #334155;
+    white-space: nowrap;
+}
+.converter select,
+.converter input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.converter button {
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: greenyellow;
+    color: green;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+.converter button:hover {
+    background-color: rgb(0, 173, 87);
+    color: white;
+}
+.result {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fe293b;
+    background: #f9fafb;
+    padding: 8px;
+    border-radius: 6px;
+}
